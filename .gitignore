@@ -1,6 +1,6 @@
 .env
-photos
-summaries
-voice_messages
-weeks
+photos/*
+summaries/*
+voice_messages/*
+weeks/*
 result.json
