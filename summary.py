@@ -45,7 +45,7 @@ def build_prompt(data: dict, week_num: int, year: int) -> str:
     for msg in messages:
         msg_id = msg.get('id')
         date = msg.get('date', '')
-        from_name = msg.get('from', '')
+        from_name = msg.get('forwarded_from') or msg.get('from', '')
         text = msg.get('text', '')
 
         # Format date nicely
